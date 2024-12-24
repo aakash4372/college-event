@@ -14,7 +14,7 @@ const ADMIN_PASSWORD_HASH = bcrypt.hashSync('a', 10);
 app.use(express.json());
 const cors = require('cors');
 app.use(cors({
-  origin: 'https://your-vercel-app-url.vercel.app',  // Replace with your Vercel app URL
+  origin: 'https://college-event-xi.vercel.app',  // Replace with your Vercel app URL
   methods: ['GET', 'POST'],  // Add other methods if needed
 }));
 

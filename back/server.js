@@ -13,9 +13,7 @@ const ADMIN_EMAIL = 'college@outlook.com';
 const ADMIN_PASSWORD_HASH = bcrypt.hashSync('a', 10); 
 
 app.use(express.json());
-app.use(cors({
-  origin: 'http://localhost:3000', 
-}));
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('Welcome to the event registration backend!');
